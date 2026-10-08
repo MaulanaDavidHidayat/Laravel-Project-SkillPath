@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Drop Shadow Filter -->
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#0F172A" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- Clean App Background Card -->
+  <rect width="512" height="512" rx="112" ry="112" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="4" filter="url(#shadow)"/>
+
+  <!-- Decorative Interface Window Header -->
+  <g transform="translate(64, 64)">
+    <!-- Window Frame -->
+    <rect width="384" height="384" rx="24" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="3"/>
+    
+    <!-- Top Bar -->
+    <path d="M 0 24 C 0 10.745 10.745 0 24 0 H 360 C 373.255 0 384 10.745 384 24 V 48 H 0 Z" fill="#F1F5F9"/>
+    <line x1="0" y1="48" x2="384" y2="48" stroke="#CBD5E1" stroke-width="2"/>
+    
+    <!-- Window Dots -->
+    <circle cx="24" cy="24" r="6" fill="#EF4444"/>
+    <circle cx="44" cy="24" r="6" fill="#F59E0B"/>
+    <circle cx="64" cy="24" r="6" fill="#10B981"/>
+
+    <!-- Central Relationships Graphic (Interconnected People / Network Nodes with Hearts) -->
+    <g transform="translate(64, 85)">
+      <!-- Connecting Network Lines -->
+      <path d="M 60 120 L 128 70 L 196 120 L 128 190 Z" fill="none" stroke="#0F172A" stroke-width="4" stroke-linejoin="round"/>
+      <line x1="128" y1="70" x2="128" y2="190" stroke="#0F172A" stroke-width="4"/>
+
+      <!-- Central Heart Connection Emblem -->
+      <g transform="translate(128, 125)">
+        <path d="M 0 16 C -12 6 -24 -2 -24 -14 C -24 -22 -16 -28 -8 -28 C -2 -28 2 -24 6 -18 C 10 -24 14 -28 20 -28 C 28 -28 36 -22 36 -14 C 36 -2 24 6 12 16 Z" fill="#FB7185" stroke="#0F172A" stroke-width="3.5" transform="translate(-6, 2) scale(0.9)"/>
+      </g>
+
+      <!-- Person Node 1 (Top) -->
+      <g transform="translate(128, 70)">
+        <circle cx="0" cy="-20" r="16" fill="#FBBF24" stroke="#0F172A" stroke-width="3.5"/>
+        <path d="M -20 12 C -20 2 20 2 20 12" fill="#FBBF24" stroke="#0F172A" stroke-width="3.5" stroke-linecap="round"/>
+      </g>
+
+      <!-- Person Node 2 (Left) -->
+      <g transform="translate(60, 120)">
+        <circle cx="0" cy="-20" r="16" fill="#2DD4BF" stroke="#0F172A" stroke-width="3.5"/>
+        <path d="M -20 12 C -20 2 20 2 20 12" fill="#2DD4BF" stroke="#0F172A" stroke-width="3.5" stroke-linecap="round"/>
+      </g>
+
+      <!-- Person Node 3 (Right) -->
+      <g transform="translate(196, 120)">
+        <circle cx="0" cy="-20" r="16" fill="#38BDF8" stroke="#0F172A" stroke-width="3.5"/>
+        <path d="M -20 12 C -20 2 20 2 20 12" fill="#38BDF8" stroke="#0F172A" stroke-width="3.5" stroke-linecap="round"/>
+      </g>
+
+      <!-- Person Node 4 (Bottom) -->
+      <g transform="translate(128, 190)">
+        <circle cx="0" cy="-20" r="16" fill="#818CF8" stroke="#0F172A" stroke-width="3.5"/>
+        <path d="M -20 12 C -20 2 20 2 20 12" fill="#818CF8" stroke="#0F172A" stroke-width="3.5" stroke-linecap="round"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -48,7 +48,7 @@
 
                         @if ($lesson->content)
                             <p>
-                                {{ $lesson->content }}
+                                {!! \Illuminate\Support\Str::markdown($lesson->content) !!}
                             </p>
                         @else
                             <div class="lesson-empty">

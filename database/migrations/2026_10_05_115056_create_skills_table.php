@@ -13,7 +13,7 @@ return new class extends Migration
             $table->string('name');
             $table->string('slug')->unique();
             $table->text('description')->nullable();
-            $table->string('level')->default('Beginner');
+            $table->string('level')->default('SkillPath');
             $table->string('category')->nullable();
             $table->timestamps();
         });

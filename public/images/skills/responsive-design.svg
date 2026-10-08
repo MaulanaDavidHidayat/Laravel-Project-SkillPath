@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Drop Shadow Filter -->
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#0F172A" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- Clean App Background Card -->
+  <rect width="512" height="512" rx="112" ry="112" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="4" filter="url(#shadow)"/>
+
+  <!-- Decorative Interface Window Header -->
+  <g transform="translate(64, 64)">
+    <!-- Window Frame -->
+    <rect width="384" height="384" rx="24" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="3"/>
+    
+    <!-- Top Bar -->
+    <path d="M 0 24 C 0 10.745 10.745 0 24 0 H 360 C 373.255 0 384 10.745 384 24 V 48 H 0 Z" fill="#F1F5F9"/>
+    <line x1="0" y1="48" x2="384" y2="48" stroke="#CBD5E1" stroke-width="2"/>
+    
+    <!-- Window Dots -->
+    <circle cx="24" cy="24" r="6" fill="#EF4444"/>
+    <circle cx="44" cy="24" r="6" fill="#F59E0B"/>
+    <circle cx="64" cy="24" r="6" fill="#10B981"/>
+
+    <!-- Central Responsive Design Graphic (Multi-device layout: Desktop, Tablet, Phone) -->
+    <g transform="translate(52, 90)">
+      <!-- 1. Desktop Monitor Screen -->
+      <g transform="translate(0, 20)">
+        <rect x="0" y="0" width="220" height="140" rx="10" fill="#FFFFFF" stroke="#0F172A" stroke-width="4"/>
+        <!-- Desktop Header Bar inside screen -->
+        <rect x="16" y="16" width="188" height="24" rx="6" fill="#38BDF8" stroke="#0F172A" stroke-width="3"/>
+        <!-- Content placeholders -->
+        <rect x="16" y="52" width="120" height="68" rx="6" fill="#F1F5F9" stroke="#0F172A" stroke-width="3"/>
+        <rect x="148" y="52" width="56" height="30" rx="4" fill="#FBBF24" stroke="#0F172A" stroke-width="3"/>
+        <rect x="148" y="90" width="56" height="30" rx="4" fill="#2DD4BF" stroke="#0F172A" stroke-width="3"/>
+        <!-- Stand Base -->
+        <path d="M 90 140 H 130 L 140 164 H 80 Z" fill="#0F172A" stroke="#0F172A" stroke-width="2" stroke-linejoin="round"/>
+        <line x1="60" y1="164" x2="160" y2="164" stroke="#0F172A" stroke-width="4" stroke-linecap="round"/>
+      </g>
+
+      <!-- 2. Tablet Device Overlapping Right -->
+      <g transform="translate(170, 70)">
+        <rect x="0" y="0" width="96" height="130" rx="12" fill="#FFFFFF" stroke="#0F172A" stroke-width="4"/>
+        <circle cx="48" cy="116" r="4" fill="#0F172A"/>
+        <!-- Tablet UI Blocks -->
+        <rect x="12" y="16" width="72" height="16" rx="4" fill="#FB7185" stroke="#0F172A" stroke-width="2.5"/>
+        <rect x="12" y="40" width="72" height="42" rx="4" fill="#F1F5F9" stroke="#0F172A" stroke-width="2.5"/>
+        <rect x="12" y="90" width="72" height="14" rx="3" fill="#34D399" stroke="#0F172A" stroke-width="2.5"/>
+      </g>
+
+      <!-- 3. Smartphone Device Overlapping Bottom-Right -->
+      <g transform="translate(260, 110)">
+        <rect x="0" y="0" width="64" height="120" rx="10" fill="#FFFFFF" stroke="#0F172A" stroke-width="4"/>
+        <line x1="24" y1="10" x2="40" y2="10" stroke="#0F172A" stroke-width="2.5" stroke-linecap="round"/>
+        <circle cx="32" cy="108" r="3.5" fill="#0F172A"/>
+        <!-- Phone UI Stack -->
+        <rect x="10" y="24" width="44" height="20" rx="4" fill="#FBBF24" stroke="#0F172A" stroke-width="2.5"/>
+        <rect x="10" y="52" width="44" height="32" rx="4" fill="#2DD4BF" stroke="#0F172A" stroke-width="2.5"/>
+        <rect x="10" y="90" width="44" height="10" rx="2" fill="#CBD5E1"/>
+      </g>
+    </g>
+  </g>
+</svg>
